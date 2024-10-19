@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${styles[`container`]}`}>
+      <div className={`${styles[`primary`]}`}>Set your</div>
+      <div className={`${styles[`secondary`]}`}>CSS variables</div>
+      <div className={`${styles[`teritary`]}`}>In index.scss</div>
     </div>
   );
 }

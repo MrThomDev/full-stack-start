@@ -1,0 +1,18 @@
+@use "global" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+:root {
+  --color-primary: #{$primary-color};
+  --base-font-size: 1.6rem; /* Adjust this as needed */
+  --golden-ratio: 1.618;
+}

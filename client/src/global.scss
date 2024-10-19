@@ -1,0 +1,39 @@
+@use "sass:math";
+@use "sass:color";
+
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$tertiary-color: #2ecc71;
+
+$base-font-size: 1.6rem;
+
+@function tint($color, $percentage) {
+  @return color.mix(white, $color, $percentage);
+}
+
+@function shadeColor($color, $percentage) {
+  @return color.mix(black, $color, $percentage);
+}
+
+@function fontSize($exponent) {
+  $result: 1;
+  $base: 1.618;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $result: $result * $base;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through abs($exponent) {
+      $result: math.div($result, $base);
+    }
+  }
+
+  @return calc($base-font-size * #{$result});
+}
+
+@mixin test-mix($height, $fontSize) {
+  aspect-ratio: 1/1;
+  height: $height;
+  font-size: fontSize($fontSize);
+}

@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.container {
+  text-align: center;
+  background-color: white;
+  aspect-ratio: 1/1;
+  height: 200rem;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  aspect-ratio: 1/1;
+  height: 20rem;
+  font-size: fontSize(2);
+}
+
+.secondary {
+  background-color: shadeColor($secondary-color, 1%);
+  aspect-ratio: 1/1;
+  height: 20rem;
+  font-size: fontSize(1);
+}
+
+.teritary {
+  background-color: $tertiary-color;
+  @include test-mix(20rem, 2);
+}
