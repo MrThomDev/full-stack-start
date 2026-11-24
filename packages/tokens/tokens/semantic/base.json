@@ -1,0 +1,132 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans": {
+        "$value": [
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif"
+        ]
+      },
+      "serif": {
+        "$value": [
+          "Iowan Old Style",
+          "Palatino Linotype",
+          "Georgia",
+          "Times New Roman",
+          "serif"
+        ]
+      },
+      "mono": {
+        "$value": [
+          "ui-monospace",
+          "SFMono-Regular",
+          "Cascadia Code",
+          "Consolas",
+          "Menlo",
+          "monospace"
+        ]
+      }
+    },
+    "size": {
+      "$type": "dimension",
+      "xs": { "$value": { "value": 0.75, "unit": "rem" } },
+      "sm": { "$value": { "value": 0.875, "unit": "rem" } },
+      "md": { "$value": { "value": 1, "unit": "rem" } },
+      "lg": { "$value": { "value": 1.125, "unit": "rem" } },
+      "xl": { "$value": { "value": 1.25, "unit": "rem" } },
+      "2xl": { "$value": { "value": 1.5, "unit": "rem" } },
+      "3xl": { "$value": { "value": 1.875, "unit": "rem" } },
+      "4xl": { "$value": { "value": 2.25, "unit": "rem" } }
+    },
+    "line-height": {
+      "$type": "number",
+      "tight": { "$value": 1.25 },
+      "normal": { "$value": 1.5 },
+      "relaxed": { "$value": 1.75 }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular": { "$value": 400 },
+      "medium": { "$value": 500 },
+      "semibold": { "$value": 600 },
+      "bold": { "$value": 700 }
+    }
+  },
+  "space": {
+    "$type": "dimension",
+    "3xs": { "$value": { "value": 0.125, "unit": "rem" } },
+    "2xs": { "$value": { "value": 0.25, "unit": "rem" } },
+    "xs": { "$value": { "value": 0.5, "unit": "rem" } },
+    "sm": { "$value": { "value": 0.75, "unit": "rem" } },
+    "md": { "$value": { "value": 1, "unit": "rem" } },
+    "lg": { "$value": { "value": 1.5, "unit": "rem" } },
+    "xl": { "$value": { "value": 2, "unit": "rem" } },
+    "2xl": { "$value": { "value": 3, "unit": "rem" } },
+    "3xl": { "$value": { "value": 4, "unit": "rem" } }
+  },
+  "size": {
+    "$type": "dimension",
+    "xs": { "$value": { "value": 6, "unit": "rem" } },
+    "sm": { "$value": { "value": 12, "unit": "rem" } },
+    "md": { "$value": { "value": 20, "unit": "rem" } },
+    "lg": { "$value": { "value": 32, "unit": "rem" } },
+    "content": { "$value": { "value": 72, "unit": "rem" } }
+  },
+  "radius": {
+    "$type": "dimension",
+    "none": { "$value": { "value": 0, "unit": "px" } },
+    "sm": { "$value": { "value": 0.25, "unit": "rem" } },
+    "md": { "$value": { "value": 0.5, "unit": "rem" } },
+    "lg": { "$value": { "value": 0.75, "unit": "rem" } },
+    "full": { "$value": { "value": 9999, "unit": "px" } }
+  },
+  "border": {
+    "width": {
+      "$type": "dimension",
+      "thin": { "$value": { "value": 1, "unit": "px" } },
+      "thick": { "$value": { "value": 2, "unit": "px" } }
+    }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "sm": {
+      "$value": {
+        "color": "#0000001a",
+        "offsetX": { "value": 0, "unit": "px" },
+        "offsetY": { "value": 1, "unit": "px" },
+        "blur": { "value": 2, "unit": "px" },
+        "spread": { "value": 0, "unit": "px" }
+      }
+    },
+    "md": {
+      "$value": {
+        "color": "#0000001f",
+        "offsetX": { "value": 0, "unit": "px" },
+        "offsetY": { "value": 4, "unit": "px" },
+        "blur": { "value": 8, "unit": "px" },
+        "spread": { "value": -2, "unit": "px" }
+      }
+    },
+    "lg": {
+      "$value": {
+        "color": "#00000029",
+        "offsetX": { "value": 0, "unit": "px" },
+        "offsetY": { "value": 12, "unit": "px" },
+        "blur": { "value": 24, "unit": "px" },
+        "spread": { "value": -6, "unit": "px" }
+      }
+    }
+  },
+  "duration": {
+    "$type": "duration",
+    "fast": { "$value": { "value": 100, "unit": "ms" } },
+    "normal": { "$value": { "value": 200, "unit": "ms" } },
+    "slow": { "$value": { "value": 300, "unit": "ms" } }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "color": {
+    "$type": "color",
+    "background": { "$value": "{color.neutral.900}" },
+    "surface": { "$value": "{color.neutral.800}" },
+    "text": {
+      "primary": { "$value": "{color.neutral.50}" },
+      "secondary": { "$value": "{color.neutral.300}" },
+      "on-accent": { "$value": "{color.neutral.900}" }
+    },
+    "border": { "$value": "{color.neutral.700}" },
+    "accent": {
+      "base": { "$value": "{color.primary.300}" },
+      "hover": { "$value": "{color.primary.200}" }
+    },
+    "focus": { "$value": "{color.primary.400}" },
+    "status": {
+      "success": {
+        "fg": { "$value": "{color.success.300}" },
+        "bg": { "$value": "{color.success.900}" }
+      },
+      "warning": {
+        "fg": { "$value": "{color.warning.300}" },
+        "bg": { "$value": "{color.warning.900}" }
+      },
+      "danger": {
+        "fg": { "$value": "{color.danger.300}" },
+        "bg": { "$value": "{color.danger.900}" }
+      }
+    }
+  }
+}

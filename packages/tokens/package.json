@@ -4,6 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node build.ts",
     "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "style-dictionary": "^5.8.0"
+  },
+  "exports": {
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.ts": "./dist/tokens.ts"
   }
 }

@@ -7,11 +7,12 @@
     "node": ">=26"
   },
   "scripts": {
-    "test": "vitest run --passWithNoTests",
-    "lint": "eslint .",
+    "tokens:build": "pnpm --filter @app/tokens build",
+    "test": "pnpm tokens:build && vitest run --passWithNoTests",
+    "lint": "pnpm tokens:build && eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm tokens:build && pnpm -r typecheck"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -29,8 +29,10 @@ apps/web/src/
   styles/           global CSS (reset, token imports) only
 packages/shared/src/  typed socket event maps + shared types
 packages/tokens/
-  tokens/primitive/   raw values (color.blue.500, font.size.300)
-  tokens/semantic/    purpose-based aliases (color.text.primary), light + dark
+  tokens/primitive/   raw color palettes (color.primary.500)
+  tokens/semantic/    what components use: light.json + dark.json (themed colors,
+                      e.g. color.text.primary) and base.json (font, space, size,
+                      radius, shadow, border, duration; same in both themes)
   dist/               generated, never edit by hand
 ```
 
