@@ -1,2 +1,1 @@
-// Placeholder, replaced in a later stage.
-export {};
+export type * from "./events.ts";

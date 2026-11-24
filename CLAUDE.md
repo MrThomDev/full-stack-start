@@ -17,7 +17,8 @@ This repo is deliberately lean. Databases, auth and multi-instance scaling are a
 
 ```
 apps/server/src/
-  index.ts          bootstrap: http server + Express + Socket.IO
+  index.ts          bootstrap: reads env, starts the server, graceful shutdown
+  server.ts         createServer(): http server + Express + Socket.IO (used by tests)
   app.ts            Express app (routes; serves client build in prod)
   socket/           connection setup + handlers grouped by feature
   state/            state stores; the only place state is changed

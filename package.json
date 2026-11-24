@@ -8,7 +8,7 @@
   },
   "scripts": {
     "tokens:build": "pnpm --filter @app/tokens build",
-    "test": "pnpm tokens:build && vitest run --passWithNoTests",
+    "test": "pnpm tokens:build && vitest run",
     "lint": "pnpm tokens:build && eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
